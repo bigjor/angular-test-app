@@ -1,0 +1,6 @@
+{
+    "placas": [
+        { "id": "1", "power": 200 },
+        { "id": "2", "power": 400, "client": "Jordan Perucho" }
+    ]
+}

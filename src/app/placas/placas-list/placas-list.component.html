@@ -1,0 +1,10 @@
+<form class="client-form">
+    <mat-form-field class="client-full-width">
+      <mat-label>Buscar Cliente</mat-label>
+      <input id="searchPlaca" name="searchPlaca" [(ngModel)]="criterio" matInput placeholder="Big">
+    </mat-form-field>
+</form>
+
+<mat-list role="list">
+    <app-placas-item [placa]="placa" *ngFor="let placa of placas | filterPlaca:criterio"></app-placas-item>
+</mat-list>

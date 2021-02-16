@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+  <span [routerLink]="['home']" [routerLinkActive]="['active']" class="spacer">Home</span>
+  <span [routerLink]="['placas']" [routerLinkActive]="['active']" class="spacer">Placas</span>
+  <span [routerLink]="['login']" [routerLinkActive]="['active']" class="spacer">Login</span>
+  <span class="example-spacer"></span>
+  <span (click)="logout();" class="spacer">Logout</span>
+</mat-toolbar>

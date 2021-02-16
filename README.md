@@ -25,3 +25,57 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## CREAR APP
+
+ng new app
+
+## BOOTSTRAP
+
+Para instalar bootstrap
+
+npm install bootstrap@next --save
+
+en angular.json, añadimos la ruta relativa de los estilos y la ruta relativa del script
+
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+"node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+## ANGULAR MATERIAL
+
+ng add @angular/material
+
+importar componentes a usar en app.module
+
+## COMANDOS
+
+### INICIAR PAGINA
+
+ng serve -o
+
+### CREAR MODULO
+
+ng g component components/name
+
+### CREAR INTERFAZ
+
+ng g interface components/name
+
+### CREAR SERVICIO
+
+ng g service components/name
+
+### CREAR PIPE
+
+ng g pipe pipes/name
+
+### CREAR GUARD
+
+ng g guard guard/name
+
+
+## PROBLEMAS
+
+Añadir a tsconfig.json, porque no deja tener un atributo sin inicializar.
+"strictPropertyInitialization": false,
